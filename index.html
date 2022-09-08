@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quality Score</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body onload="onInit()">
+    <h1 class="title">Choose your package</h1>
+
+    <div class="main">
+      <div class="tabs quantities-tabs"></div>
+
+      <div class="tabs purchase-tabs">
+        <button
+          class="tabs__btn purchase-tabs__btn purchase-tabs__btn--one-time"
+          onclick="renderOneTimePurchase()"
+        >
+          One-Time Purchase
+        </button>
+        <button
+          class="tabs__btn purchase-tabs__btn purchase-tabs__btn--subscribe"
+          onclick="renderSubscribeAndSaveMore()"
+        >
+          Subscribe & Save More
+        </button>
+      </div>
+
+      <div class="terms">
+        <label
+          class="checkbox"
+          for="subscribe"
+          onchange="toggleCheckBoxTermsCtaLink()"
+        >
+          <input
+            class="checkbox__input"
+            type="checkbox"
+            id="subscribe"
+            name="subscribe"
+          />
+          <span class="checkbox__checkmark"></span>
+          Yes! I want to Subscribe & Save
+        </label>
+        By checking the "Yes" box above, you agree to receive "Dermal Repair
+        Complex" once per month and that your credit card will be charged the
+        amount matching your selected package size, billed to your card as
+        "Beverly Hills MD". You can stop shipments anytime by calling customer
+        service at <a href="tel:+877-828-5528">(877) 828-5528</a> from 6am to
+        6pm PST. (<a href="#">All terms and conditions apply</a>)
+      </div>
+
+      <div class="package"></div>
+
+      <div class="icon-box icon-box__flag">
+        <svg>
+          <use
+            xlink:href="assets/images/sprite.svg#united-states-of-america"
+          ></use>
+        </svg>
+        Manufactured in USA
+      </div>
+
+      <div class="icon-box icon-box__delivery">
+        <svg>
+          <use xlink:href="assets/images/sprite.svg#delivery-truck"></use>
+        </svg>
+        Door to door
+      </div>
+    </div>
+
+    <div class="main__money-guarantee">
+      <svg><use xlink:href="assets/images/sprite.svg#90days"></use></svg>
+    </div>
+
+    <p class="main__guarantee-txt">
+      Your order is backed by our 90-day money-back guarantee.
+    </p>
+    <p class="main__note-txt">
+      We are confident you'll love it. So if you're not completely satisfied for
+      any reason, just send it back for a full refund!
+    </p>
+    <p class="main__shipping-txt">(Not including return shipping)</p>
+
+    <script src="js/index.js"></script>
+    <script src="js/service.js"></script>
+    <script src="js/utils.js"></script>
+  </body>
+</html>

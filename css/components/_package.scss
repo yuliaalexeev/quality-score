@@ -1,0 +1,85 @@
+.package {
+  position: relative;
+  &__stamp {
+    position: absolute;
+    top: -11px;
+    left: 23px;
+    z-index: 2;
+    @include for-narrow-layout{
+      top: 2px;
+      left: 30px;
+    }
+    @include for-normal-layout{
+      top: 0;
+      left: 17px;
+    }
+    svg {
+      width: 113px;
+      height: 113px;
+    }
+  }
+  &__img {
+
+
+    height: 190px;
+    margin-bottom: 20px;
+    @include for-narrow-layout{
+      height: 206px;
+      margin-bottom: 5px;
+    }
+    img {
+      transform: scale(1.1);
+      height: 108%;
+    }
+  }
+  &__price {
+    font-size: 48px;
+    color: $clr1;
+    font-family: 'Assistant-Bold';
+    &--duration {
+      font-size: 32px;
+    }
+  }
+  &__retail-price {
+    color: $clr7;
+    text-decoration: line-through;
+  }
+  &__instant-price {
+    color: $clr6;
+  }
+  &__shipping-txt {
+    text-transform: uppercase;
+  }
+  &__p {
+    font-family: 'Assistant-Bold';
+    font-size: 18px;
+    margin-bottom: 3px;
+    @include for-narrow-layout {
+      font-size: inherit;
+      margin: 4px 0 0 0;
+    }
+  }
+  &__link {
+    margin-top: 27px;
+    border-radius: 29px;
+    background-color: $clr6;
+    color: $clr8;
+    font-size: 32px;
+    display: block;
+    padding: 8px 0;
+    text-transform: uppercase;
+    font-family: 'Assistant-Bold';
+    will-change: background-color;
+    transition: background-color .3s ease-in-out;
+    @include for-narrow-layout {
+      margin-top: 19px;
+    }
+    &:hover {
+      background-color: darken($clr6, 10%);
+    }
+    &--disabled {
+      pointer-events: none;
+      background-color: $clr5;
+    }
+  }
+}

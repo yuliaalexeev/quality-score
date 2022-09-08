@@ -1,0 +1,78 @@
+.main {
+  max-width: 345px;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  > *:not(.icon-box__delivery):not(.icon-box__flag) {
+    grid-column: 1 /-1;
+  }
+  &__money-guarantee {
+    margin: 28px auto 0;
+    animation: bounce 1s;
+    @include for-narrow-layout {
+      margin: 46px auto 0;
+    }
+    @include for-normal-layout {
+      margin: 35px auto 0;
+    }
+    svg{
+      width: 200px; 
+    }
+  }
+  &__guarantee-txt {
+    color: $clr6;
+    font-family: "Assistant-ExtraBold";
+    font-size: 18px;
+  }
+  &__note-txt {
+    font-family: "Assistant-SemiBold";
+    font-size: 18px;
+    color: $clr2;
+    margin: 6px 0;
+    @include for-narrow-layout {
+      margin: 27px 0 19px ;
+    }
+    @include for-normal-layout{
+      margin: 31px 0 25px;
+    }
+  }
+  &__shipping-txt {
+    font-size: 14px;
+    color: $clr5;
+  }
+}
+
+.icon-box {
+  font-size: 14px;
+  margin-top: 38px;
+  height: 66px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  @include for-narrow-layout {
+    margin-top: 73px;
+  }
+  @include for-normal-layout {
+    margin-top: 38px;
+  }
+  &__flag {
+    svg {
+      width: 46px;
+    }
+  }
+  &__delivery {
+    svg {
+      width: 56px;
+    }
+  }
+}
+
+.title {
+  font-size: 24px;
+  font-family: "Assistant-ExtraBold";
+  text-transform: uppercase;
+  color: $clr1;
+  margin-bottom: 0;
+}

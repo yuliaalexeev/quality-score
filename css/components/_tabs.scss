@@ -1,0 +1,49 @@
+.tabs{
+  display: flex;
+  border: 1px solid $clr4;
+  box-shadow: 10px 10px 6px rgba($clr8, .16);
+  border-radius: 20px;
+  background-color: $clr8;
+  &__btn{
+    flex-basis: 100%;
+    background-color: transparent;
+    border: 0;
+  }
+}
+
+.quantities-tabs {
+  margin-top: 25px;
+  @include for-narrow-layout{
+    margin-top: 30px;
+  }
+  &__btn {
+    color: $clr5;
+    font-size: 24px;  
+    padding: 3px 0;
+    font-family: "Assistant-Bold";
+    &.current {
+      transform: scale(1.2);
+      font-size: 30px;
+      color: $clr8;
+      background-color: $clr1;
+      border-radius: 20px;
+      font-size: 24px;
+    }
+  }
+}
+
+.purchase-tabs {
+  margin: 18px 0;
+  &__btn {
+    padding: 8px 0;
+    color: $clr2;
+    font-size: inherit;
+    font-family: "Assistant-Regular";
+    &.current {
+      color: $clr8;
+      background-color: $clr1;
+      border-radius: 20px;
+      font-family: "Assistant-SemiBold";
+    }
+  }
+}
