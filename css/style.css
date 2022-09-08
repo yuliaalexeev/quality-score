@@ -1,21 +1,21 @@
 @font-face {
   font-family: "Assistant-Regular";
-  src: url("../../assets/fonts/Assistant/Assistant-Regular.ttf");
+  src: url("../assets/fonts/Assistant/Assistant-Regular.ttf");
 }
 
 @font-face {
   font-family: "Assistant-ExtraBold";
-  src: url("../../assets/fonts/Assistant/Assistant-ExtraBold.ttf");
+  src: url("../assets/fonts/Assistant/Assistant-ExtraBold.ttf");
 }
 
 @font-face {
   font-family: "Assistant-Bold";
-  src: url("../../assets/fonts/Assistant/Assistant-Bold.ttf");
+  src: url("../assets/fonts/Assistant/Assistant-Bold.ttf");
 }
 
 @font-face {
   font-family: "Assistant-SemiBold";
-  src: url("../../assets/fonts/Assistant/Assistant-SemiBold.ttf");
+  src: url("../assets/fonts/Assistant/Assistant-SemiBold.ttf");
 }
 
 @-webkit-keyframes fadeIn {
@@ -80,7 +80,7 @@ body {
   margin: 0;
   padding: 17px 15px 30px 15px;
   text-align: center;
-  background-image: url("../../assets/images/leaves_right_mobile.png"), url("../../assets/images/leaves_left_mobile.png"), url("../../assets/images/fixed_bg_mobile.png");
+  background-image: url("../assets/images/leaves_right_mobile.png"), url("../assets/images/leaves_left_mobile.png"), url("../assets/images/fixed_bg_mobile.png");
   background-position: calc(100% + 87px) 193px, -120px 136px, 0 0;
   background-repeat: no-repeat;
   background-attachment: scroll, scroll, fixed;
@@ -90,7 +90,7 @@ body {
 @media (min-width: 768px) {
   body {
     padding: 26px 15px 30px 15px;
-    background-image: url("../../assets/images/leaves_right.png"), url("../../assets/images/leaves_left.png"), url("../../assets/images/fixed_bg_tablet.png");
+    background-image: url("../assets/images/leaves_right.png"), url("../assets/images/leaves_left.png"), url("../assets/images/fixed_bg_tablet.png");
     background-position: 111% 137px, -99px -15px, 0 -43px;
   }
 }
@@ -98,7 +98,7 @@ body {
 @media (min-width: 1024px) {
   body {
     padding: 45px 15px 30px 15px;
-    background-image: url("../../assets/images/leaves_right.png"), url("../../assets/images/leaves_left.png"), url("../../assets/images/fixed_bg_desktop.png");
+    background-image: url("../assets/images/leaves_right.png"), url("../assets/images/leaves_left.png"), url("../assets/images/fixed_bg_desktop.png");
     background-position: 104.5% 140px, -96px -16px, 0 -16px;
   }
 }
