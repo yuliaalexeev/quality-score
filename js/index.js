@@ -87,5 +87,5 @@ function renderPackage(currentPrice, originalPrice, isBestSeller, isBestValue, c
   <span class="package__price">${formatPrice(currentPrice)}${durationEl}</span>
   <p class="package__p">Retail Price <span class="package__retail-price">${formatPrice(originalPrice)}</span></p>
   <p class="package__p">Instant Savings <span class="package__instant-price">${formatPrice(originalPrice - currentPrice)}</p>
-  <p class="package__p package__shipping-txt">Free US shipping</p><a href="${currentLink}" target="_blank" class="package__link">Buy Now</a>`;
+  <p class="package__p package__shipping-txt">Free US shipping</p><a href="https://${currentLink}" target="_blank" class="package__link">Buy Now</a>`;
 }

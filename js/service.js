@@ -1,7 +1,7 @@
 var gSelectedPackage;
 const gCurrentClassName = 'current';
 const gCurrency = '$';
-const gImagesPath = '/assets/images/';
+const gImagesPath = './assets/images/';
 
 const gPackages = [
   {
